@@ -8,6 +8,97 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <div id="logo"></div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../calendar/index.html">Calendar</a>
+        <a href="index.html">Join</a>
+      </nav>
+    </header>
+
+    <section class="join">
+
+      <h1>Join Film Club</h1>
+
+      <section class="joinform">
+        <form class="form" action="index.html" method="post">
+
+          <fieldset class="column1">
+            <div class="profile">
+              <label for="picupload" name="picupload">profile picture</label>
+              <input type="file" name="picupload" value="">
+              <div id="profilepic"></div>
+            </div>
+          </fieldset>
+
+          <fieldset class="column2">
+            <div class="name">
+              <label for="name">name</label>
+              <input type="text" name="name" value="" required="" id="name">
+
+              <label for="email">email address</label>
+              <input type="email" name="email" value="" required="" id="email">
+            </div>
+          </fieldset>
+
+          <fieldset class="column3">
+            <div class="password">
+              <label for="password">password</label>
+              <input type="password" name="password" value="" required="" id="password">
+
+              <label for="passconf">confirm password</label>
+              <input type="password" name="passconf" value="" required="" id="passconf">
+            </div>
+          </fieldset>
+
+          <fieldset class="formrow">
+            <div class="genres">
+              <label for="genres">Which genres are you interested in?</label>
+              <div class="check1">
+                <input type="checkbox" name="genres" value="action">action
+                <input type="checkbox" name="genres" value="drama">drama
+                <input type="checkbox" name="genres" value="horror">horror
+                <input type="checkbox" name="genres" value="scifi">science fiction
+              </div>
+              <div class="check2">
+                <input type="checkbox" name="genres" value="adventure">adventure
+                <input type="checkbox" name="genres" value="fantasy">fantasy
+                <input type="checkbox" name="genres" value="mystery">mystery
+                <input type="checkbox" name="genres" value="western">western
+              </div>
+              <div class="check3">
+                <input type="checkbox" name="genres" value="comedy">comedy
+                <input type="checkbox" name="genres" value="historical">historical
+                <input type="checkbox" name="genres" value="romance">romance
+              </div>
+            </div>
+            
+            <div class="input">
+              <label for="input">Additional input</label>
+              <input type="textarea" name="input" value="" id="input">
+            </div>
+            <div class="joinbutton">
+              <button type="button" name="button">Join Film Club</button>
+            </div>
+
+          </fieldset>
+
+        </form>
+
+      </section>
+
+    </section>
+
+
+
+    <footer>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../calendar/index.html">Calendar</a>
+        <a href="index.html">Join</a>
+      </nav>
+    </footer>
 
   </body>
 </html>
