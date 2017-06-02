@@ -10,12 +10,13 @@
   flex-direction: column;
 }
 
-.involved div h2 {
+.blurb h2 {
   background-color: #0B1942;
   color: #fff;
-  padding: 2%;
+  padding: 3%;
   padding-left: 4%;
 }
+
 
 /*------------------HOME UPNEXT*/
 
@@ -122,9 +123,80 @@
 
 
 /*--------------------------------TABLET*/
-/*is window smaller than 768px?*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width 768px)(min-width: <544px) {
+  /*------------------HOME BODY*/
+  .involved {
+    margin: 0 auto;
+    padding: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+  #involve {
+    flex: 1 1 100%;
+  }
+
+  .blurb {
+    flex: 1 1 20%;
+    margin: 1%;
+  }
+
+  /*------------------HOME UPNEXT*/
+
+  .rashotext {
+    flex: 1 1 50%;
+    margin: 2% 2% 2% 5%;
+  }
+
+  .rashotext a {
+    font-size: 2rem;
+  }
+
+  .discussion h4 {
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .discussion ul {
+    margin-top: 0;
+    padding-left: 5%;
+  }
+
+  .discussion li {
+    list-style: circle;
+    text-indent: 0rem;
+    line-height: 2rem;
+  }
+
+  .smallfilms {
+    flex: 2 1 100%;
+    margin-top: 3%;
+    width: 100%;
+    padding: 3%;
+    background-color: #fff;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .box1, .box2. .box3, .box4 {
+    flex: 1 1 20%;
+    text-align: center;
+  }
+
+  .title {
+    display: block;
+    width: 167px;
+    margin-top: 3%;
+    font-size: 1.2rem;
+  }
 
 }

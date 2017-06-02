@@ -36,12 +36,12 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
 p, li {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -57,6 +57,8 @@ header {
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin: 0 auto;
+  background-color: #7DDFE8;
+  font-size: 1.5rem;
 }
 
 #logo {
@@ -91,6 +93,7 @@ nav a {
   height: 38.33px;
   color: #fff;
   font-size: 2rem;
+  font-weight: lighter;
   text-decoration: none;
 }
 
@@ -119,4 +122,62 @@ footer p {
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
+}
+
+
+
+
+
+
+/*--------------------------------TABLET*/
+/*is window smaller than 768px?*/
+
+@media screen and (max-width 768px)(min-width: <544px) {
+  /*------------------HEADER/FOOTER*/
+
+  header {
+    height: 7.6%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+
+  #logo {
+    flex: 0 1 15%;
+    height: 100%;
+    padding: 1%;
+  }
+
+
+  nav {
+    flex: 0 1 86%;
+    text-align: center;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  nav a {
+    flex: 0 1 15%;
+    margin: 0;
+    padding: 6% 4% 8.4% 4%;
+    width: 20%;
+    height: 100%;
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    position: relative;
+    bottom: 100px;
+    width: 25%;
+    float: right;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
 }
