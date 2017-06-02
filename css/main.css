@@ -23,8 +23,6 @@ S = up to 544px
 M = up to 768px
 L = over 769px*/
 
-/*--------------------------------MOBILE*/
-
 * {
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
@@ -121,83 +119,4 @@ footer p {
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
-}
-
-/*------------------HOME BODY*/
-
-.involved {
-  margin: 0 auto;
-  padding: 5%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.involved div h2 {
-  background-color: #0B1942;
-  color: #fff;
-  padding: 2%;
-  padding-left: 4%;
-}
-
-/*------------------HOME UPNEXT*/
-
-.next, .largefilm, .smallfilms {
-  margin: 0 auto;
-}
-
-.next {
-  padding: 0% 5% 5% 5%;
-  background-color: #0B1942;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.largefilm {
-  flex: 2 0 100%;
-  padding: 3%;
-  background-color: #fff;
-
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-}
-
-#rasho {
-  flex: 1 1 50%;
-  padding: 2%;
-}
-
-#rasho img {
-  object-fit: contain;
-}
-
-.rashotext {
-  flex: 1 1 50%;
-  margin: 2% 2% 2% 5%;
-  padding: 2%;
-}
-
-.largetitle {
-  display: block;
-  border-bottom: 1px solid #000;
-}
-
-.discussion {
-  display: block;
-}
-
-.discussion h4 {
-  font-size: 2.3rem;
-}
-
-.discussion li {
-  list-style: circle;
-  text-indent: 1rem;
-  line-height: 3rem;
 }
