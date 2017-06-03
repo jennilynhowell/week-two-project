@@ -1,0 +1,67 @@
+/*--------------------------------MOBILE*/
+.join h1 {
+  display: block;
+  width: 100%;
+  padding: 2%;
+  padding-left: 3%;
+  color: #0B1942;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.5%;
+}
+
+#profilepic {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6% 0;
+  border-radius: 250px;
+}
+
+#profilepic img {
+  display: block;
+  object-fit: contain;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 295px;
+}
+
+#name, #email, #password, #passconf {
+  display: block;
+  width: 90%;
+  border: 0.7px solid #ECEFF5;
+  padding: 1%;
+  font-size: 110%;
+}
+
+input[type=checkbox] {
+  margin: 3%;
+  margin-left: 0;
+}
+
+.input {
+  padding: 2%;
+}
+
+textarea {
+  height: 90px;
+  width: 100%;
+  border: 0.7px solid #ECEFF5;
+  padding: 1%;
+}
+
+button {
+  margin: 5%;
+  margin-left: 0;
+  padding: 4%;
+  background-color: #F5005B;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  border: none;
+}
