@@ -174,3 +174,71 @@
   }
 
 }
+
+
+
+
+
+/*--------------------------------DESKTOP*/
+
+@media screen and (min-width: 769px){
+  /*------------------HOME BODY*/
+  .involved {
+    margin: 0 auto;
+    padding: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #involve {
+    flex: 1 1 100%;
+  }
+
+  .blurb {
+    flex: 1 1 30%;
+    margin: 1%;
+  }
+
+  .blurb h2 {
+    padding: 4%;
+    padding-left: 5%;
+  }
+
+  /*------------------HOME UPNEXT*/
+
+  .next {
+    background-color: #0B1942;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .next h1 {
+    flex: 1 1 100%;
+    margin-left: 2%;
+  }
+
+  .largefilm {
+    flex: 1 1 40%;
+    margin: 3% 1.5%;
+  }
+
+  .smallfilms {
+    flex: 1 1 40%;
+    margin: 3% 1.5%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+}
