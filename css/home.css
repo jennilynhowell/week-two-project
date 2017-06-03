@@ -10,11 +10,19 @@
   flex-direction: column;
 }
 
+.blurb {
+  margin-bottom: 2%;
+}
+
 .blurb h2 {
   background-color: #0B1942;
   color: #fff;
   padding: 3%;
   padding-left: 4%;
+}
+
+.blurb h2:first-child {
+  margin-top: 0;
 }
 
 
@@ -42,13 +50,10 @@
 }
 
 #rasho {
-  flex: 1 1 50%;
-  padding: 2%;
-  text-align: center;
+  flex: 1 1 65%;
 }
 
 #rasho img {
-  display: block;
   object-fit: contain;
   width: 90%;
   height: 95%;
@@ -56,12 +61,8 @@
 }
 
 .rashotext {
-  flex: 1 1 50%;
+  flex: 1 1 49%;
   margin: 2% 2% 2% 5%;
-}
-
-.rashotext a {
-  font-size: 3rem;
 }
 
 .largetitle {
@@ -69,18 +70,21 @@
   border-bottom: 1px solid #000;
 }
 
+.largetitle a {
+  font-size: 1.5rem;
+}
+
 .discussion {
   display: block;
 }
 
-.discussion h4 {
-  font-size: 2.3rem;
+.discussion ul {
+  padding-left: 12%;
 }
 
 .discussion li {
   list-style: circle;
-  text-indent: 1rem;
-  line-height: 3rem;
+  line-height: 1.5rem;
 }
 
 .smallfilms {
@@ -97,25 +101,28 @@
   flex-wrap: wrap;
 }
 
-.box1, .box2. .box3, .box4 {
+.box {
   flex: 1 1 40%;
-  display: inline-block;
-  text-align: center;
+}
+
+.box p {
+  font-size: 0.9rem;
 }
 
 .smallfilms img {
-  text-align: center;
   margin: 0 auto;
+  width: 90%;
   object-fit: contain;
-  height: 100%;
-  width: 100%;
   padding-top: 5%;
 }
 
 .title {
-  display: block;
-  width: 380px;
   margin-top: 5%;
+  font-size: 0.9rem;
+}
+
+.box p {
+  font-size: 0.9rem;
 }
 
 
@@ -124,7 +131,7 @@
 
 /*--------------------------------TABLET*/
 
-@media screen and (max-width 768px)(min-width: <544px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
   /*------------------HOME BODY*/
   .involved {
     margin: 0 auto;
@@ -141,37 +148,16 @@
   }
 
   .blurb {
-    flex: 1 1 20%;
+    flex: 1 1 30%;
     margin: 1%;
   }
 
-  /*------------------HOME UPNEXT*/
-
-  .rashotext {
-    flex: 1 1 50%;
-    margin: 2% 2% 2% 5%;
-  }
-
-  .rashotext a {
-    font-size: 2rem;
-  }
-
-  .discussion h4 {
-    font-size: 1.5rem;
-    margin-top: 5%;
-    margin-bottom: 3%;
-  }
-
-  .discussion ul {
-    margin-top: 0;
+  .blurb h2 {
+    padding: 4%;
     padding-left: 5%;
   }
 
-  .discussion li {
-    list-style: circle;
-    text-indent: 0rem;
-    line-height: 2rem;
-  }
+  /*------------------HOME UPNEXT*/
 
   .smallfilms {
     flex: 2 1 100%;
@@ -185,18 +171,6 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-  }
-
-  .box1, .box2. .box3, .box4 {
-    flex: 1 1 20%;
-    text-align: center;
-  }
-
-  .title {
-    display: block;
-    width: 167px;
-    margin-top: 3%;
-    font-size: 1.2rem;
   }
 
 }

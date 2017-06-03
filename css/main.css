@@ -30,22 +30,22 @@ L = over 769px*/
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: lighter;
   color: #fff;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
 p, li {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 a {
-  font-size: 2.3rem;
+  font-size: 1rem;
   color: #00B7D3;
 }
 
@@ -58,11 +58,10 @@ header {
   flex-wrap: nowrap;
   margin: 0 auto;
   background-color: #7DDFE8;
-  font-size: 1.5rem;
 }
 
 #logo {
-  flex: 1 1 28%;
+  flex: 1 0 30%;
   background-color: #F5005B;
   padding: 1%;
 }
@@ -71,12 +70,11 @@ header {
   display: block;
   object-fit: contain;
   width: 90%;
-  height: 95%;
   padding: 5%;
 }
 
 nav {
-  flex: 1 1 75%;
+  flex: 0 1 69%;
   text-align: center;
 
   display: flex;
@@ -92,7 +90,6 @@ nav a {
   width: 100%;
   height: 38.33px;
   color: #fff;
-  font-size: 2rem;
   font-weight: lighter;
   text-decoration: none;
 }
@@ -111,6 +108,7 @@ nav a:nth-child(3) {
 
 footer {
   background-color: #6FE1E7;
+  font-size: 1rem;
 }
 
 footer p {
@@ -120,7 +118,6 @@ footer p {
   height: 38.33px;
   text-align: center;
   color: #fff;
-  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -132,7 +129,7 @@ footer p {
 /*--------------------------------TABLET*/
 /*is window smaller than 768px?*/
 
-@media screen and (max-width 768px)(min-width: <544px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
   /*------------------HEADER/FOOTER*/
 
   header {
@@ -146,8 +143,6 @@ footer p {
 
   #logo {
     flex: 0 1 15%;
-    height: 100%;
-    padding: 1%;
   }
 
 
@@ -165,18 +160,16 @@ footer p {
     flex: 0 1 15%;
     margin: 0;
     padding: 6% 4% 8.4% 4%;
-    width: 20%;
     height: 100%;
-    font-size: 1.5rem;
   }
 
   footer p {
     position: relative;
-    bottom: 100px;
+    bottom: 75px;
     width: 25%;
     float: right;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
   }
 
