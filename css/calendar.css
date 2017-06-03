@@ -1,12 +1,4 @@
 /*--------------------------------MOBILE*/
-/*
-.calendar {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}*/
 
 #calhead, #month {
   display: block;
@@ -42,28 +34,59 @@
 }
 
 .day {
-  flex: 0 1 14%;
-  height: 14%;
+  flex: 0 1 15%;
+  height: 15%;
   background-color: #fff;
-  border: 1px solid #0B1942;
+  margin: 0.4%;
+}
+
+.day:nth-child(1) {
+  margin-left: 0.8%;
+}
+
+.day:nth-child(7) {
+  margin-right: 0.8%;
 }
 
 .day p {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 50%;
-  padding: 6%;
+  padding: 9%;
   height: 50%;
-  width: 50%;
+  width: 40%;
   background-color: #0B1942;
   color: #fff;
   text-align: center;
   font-size: 0.7rem;
   font-family: sans-serif;
   line-height: 1.2rem;
-
 }
 
 .pink {
   background-color: #F5005B;
+}
+
+.blue {
+  background-color: #0B1942;
+}
+
+/*--------------------------------TABLET*/
+
+@media screen and (min-width: 768px) {
+
+  .day p {
+    font-size: 1rem;
+  }
+
+}
+
+/*--------------------------------DESKTOP*/
+
+@media screen and (min-width: 769px) {
+
+  .day p {
+    font-size: 1.2rem;
+  }
+
 }
