@@ -45,6 +45,8 @@ input[type=checkbox] {
 }
 
 .input {
+  margin: 5%;
+  margin-left: 0;
   padding: 2%;
 }
 
@@ -64,4 +66,89 @@ button {
   color: #fff;
   font-weight: lighter;
   border: none;
+}
+
+
+
+
+
+
+/*--------------------------------TABLET*/
+
+@media screen and (min-width: 768px) {
+
+  .joinform {
+    margin: 2%;
+  }
+
+  .column1 {
+    display: block;
+    width: 46.476761619190405vw;
+    float: left;
+  }
+
+  .column2 {
+    display: block;
+    width: 46.476761619190405vw;
+    float: right;
+  }
+
+  .column3 {
+    margin-top: 4%;
+    display: block;
+    width: 46.476761619190405vw;
+    float: right;
+  }
+
+  .formrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .genres {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*height: 55.16956162117452vh;*/
+  }
+
+  .genres label {
+    flex: 1 1 100%;
+  }
+
+  input[type=checkbox] {
+    margin: 11.156px;
+  }
+
+  .check1 {
+    flex: 1 1 50%;
+  }
+
+  .check2 {
+    flex: 1 1 50%
+  }
+
+  .check3 {
+    flex: 1 1 100%;
+  }
+
+  .input {
+      margin-bottom: 0;
+  }
+
+  textarea {
+    height: 4.5vh;
+  }
+
+  button {
+    margin: 3%;
+    margin-left: 0;
+  }
+
 }
