@@ -152,3 +152,39 @@ button {
   }
 
 }
+
+
+
+
+
+
+
+
+/*--------------------------------DESKTOP*/
+
+@media screen and (min-width: 769px) {
+
+  .check1 {
+    flex: 1 1 30%;
+  }
+
+  .check2 {
+    flex: 1 1 30%
+  }
+
+  .check3 {
+    flex: 1 1 30%;
+  }
+
+  textarea {
+    height: 23.5vh;
+    width: 62vw;
+  }
+
+  button {
+    margin: 3%;
+    padding: 3%;
+    margin-left: 0;
+  }
+
+}
