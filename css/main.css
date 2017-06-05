@@ -52,70 +52,70 @@ a {
 /*------------------HEADER/FOOTER*/
 
 header {
+  min-height: 6.706vh;
+  width: 100vw;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  margin: 0 auto;
   background-color: #7DDFE8;
 }
 
 #logo {
-  flex: 1 0 30%;
+  min-width: 28.691vw;
+  display: block;
+  float: left;
   background-color: #F5005B;
   padding: 1%;
 }
 
 #logo img {
-  display: block;
   object-fit: contain;
   width: 90%;
-  padding: 5%;
+  padding: 1%;
+  padding-left: 5%;
 }
 
 nav {
-  flex: 0 1 69%;
+  min-width: 54.866vw;
   text-align: center;
-
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 nav a {
-  flex: 1 1 33%;
-  margin: 0 auto;
-  padding: 4% 0 8.4% 0;
-  width: 100%;
-  height: 38.33px;
+  flex: 1 1 100%;
+  min-height: 2.2157vh;
+  padding-top: 3vh;
   color: #fff;
   font-weight: lighter;
   text-decoration: none;
 }
 
-nav a:nth-child(1) {
+.navhome {
   background-color: #00A5BF;
 }
 
-nav a:nth-child(2) {
+.navcal {
   background-color: #00B7D3;
 }
 
-nav a:nth-child(3) {
+.navjoin {
   background-color: #00D5E7;
 }
 
 footer {
+  min-height: 10.787vh;
+  width: 100vw;
   background-color: #6FE1E7;
   font-size: 1rem;
 }
 
+.foot {
+  padding-bottom: 2vh;
+}
+
 footer p {
-  padding: 4% 0 9.4% 0;
-  margin: 0 auto;
-  width: 100%;
-  height: 38.33px;
+  min-height: 2.2157vh;
+  padding-bottom: 2vh;
   text-align: center;
   color: #fff;
   text-decoration: none;
