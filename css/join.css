@@ -1,0 +1,191 @@
+/*--------------------------------MOBILE*/
+.join h1 {
+  display: block;
+  width: 100%;
+  padding: 2%;
+  padding-left: 3%;
+  color: #0B1942;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.5%;
+}
+
+#profilepic {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6% 0;
+  border-radius: 250px;
+}
+
+#profilepic img {
+  display: block;
+  object-fit: contain;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 295px;
+}
+
+#name, #email, #password, #passconf {
+  display: block;
+  width: 90%;
+  border: 2px solid #E2E2E2;
+  padding: 1%;
+  font-size: 110%;
+}
+
+input[type=checkbox] {
+  margin: 3%;
+  margin-left: 0;
+}
+
+.input {
+  margin: 5%;
+  margin-left: 0;
+  padding: 2%;
+}
+
+textarea {
+  height: 90px;
+  width: 100%;
+  border: 2px solid #E2E2E2;
+  padding: 1%;
+}
+
+button {
+  margin: 5%;
+  margin-left: 0;
+  padding: 4%;
+  background-color: #F5005B;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*--------------------------------TABLET*/
+
+@media screen and (min-width: 545px) {
+
+  .joinform {
+    margin: 2%;
+  }
+
+  .column1 {
+    display: block;
+    width: 46.476761619190405vw;
+    float: left;
+  }
+
+  .column2 {
+    display: block;
+    width: 46.476761619190405vw;
+    float: right;
+  }
+
+  .column3 {
+    margin-top: 4%;
+    display: block;
+    width: 46.476761619190405vw;
+    float: right;
+  }
+
+  .formrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .genres {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*height: 55.16956162117452vh;*/
+  }
+
+  .genres label {
+    flex: 1 1 100%;
+  }
+
+  input[type=checkbox] {
+    margin: 11.156px;
+  }
+
+  .check1 {
+    flex: 1 1 50%;
+  }
+
+  .check2 {
+    flex: 1 1 50%
+  }
+
+  .check3 {
+    flex: 1 1 100%;
+  }
+
+  .input {
+      margin-bottom: 0;
+  }
+
+  textarea {
+    height: 4.5vh;
+  }
+
+  button {
+    margin: 3%;
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+/*--------------------------------DESKTOP*/
+
+@media screen and (min-width: 769px) {
+
+  .check1 {
+    flex: 1 1 30%;
+  }
+
+  .check2 {
+    flex: 1 1 30%
+  }
+
+  .check3 {
+    flex: 1 1 30%;
+  }
+
+  textarea {
+    height: 23.5vh;
+    width: 62vw;
+  }
+
+  button {
+    margin: 3%;
+    padding: 3%;
+    margin-left: 0;
+  }
+
+}

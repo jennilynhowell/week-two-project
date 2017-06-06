@@ -1,0 +1,135 @@
+/*--------------------------------MOBILE*/
+
+#calhead, #month {
+  display: block;
+  width: 100%;
+  margin: 2vh;
+  margin-left: 4vh;
+}
+
+#calhead {
+  color: #0B1942;
+}
+
+.calbox {
+  width: 100%;
+  background-color: #0B1942;
+  padding-bottom: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.week {
+  flex: 1 0 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.day {
+  flex: 0 1 15%;
+  height: 8vh;
+  background-color: #fff;
+  margin: 0.4%;
+}
+
+.day:nth-child(1) {
+  margin-left: 0.8%;
+}
+
+.day:nth-child(7) {
+  margin-right: 0.8%;
+}
+
+.day p {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 50%;
+  padding: 9%;
+  height: 4.5vh;
+  width: 6.5vw;
+  background-color: #0B1942;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  line-height: 1.2rem;
+}
+
+.pink {
+  background-color: #F5005B;
+}
+
+.blue {
+  background-color: #0B1942;
+}
+
+
+
+
+
+
+/*--------------------------------TABLET*/
+
+@media screen and (min-width: 545px) {
+
+  .day {
+    margin: 0.2%;
+    height: 10vh;
+  }
+
+  .day:nth-child(1) {
+    margin-left: 0.5%;
+  }
+
+  .day:nth-child(7) {
+    margin-right: 0.5%;
+  }
+
+  .day p {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+/*--------------------------------DESKTOP*/
+
+@media screen and (min-width: 769px) {
+
+  #calhead {
+    margin: 3vw;
+  }
+
+  .calbox {
+    padding-bottom: 2vh;
+  }
+
+  #month {
+    padding: 2vh 0;
+    margin-left: 4vw;
+  }
+
+  .day {
+    height: 14vh;
+  }
+
+  .day p {
+    height: 6vh;
+    font-size: 1.2rem;
+  }
+
+}
