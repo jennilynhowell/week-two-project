@@ -84,7 +84,8 @@ nav {
 nav a {
   flex: 1 1 100%;
   min-height: 2.2157vh;
-  padding-top: 3vh;
+  width: 70vw;
+  padding-top: 2vh;
   color: #fff;
   font-weight: lighter;
   text-decoration: none;
@@ -133,44 +134,43 @@ footer p {
   /*------------------HEADER/FOOTER*/
 
   header {
-    height: 7.6%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    margin: 0 auto;
+    max-height: 12.671781vh;
   }
 
   #logo {
-    flex: 0 1 15%;
+    min-width: 0;
+    max-width: 20vw;
   }
 
+  #logo img {
+    width: 79%;
+    padding-left: 13%;
+  }
 
   nav {
-    flex: 0 1 86%;
-    text-align: center;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    min-width: 54.866vw;
   }
 
   nav a {
-    flex: 0 1 15%;
-    margin: 0;
-    padding: 6% 4% 8.4% 4%;
-    height: 100%;
+    min-height: 7.671781187458305vh;
+    max-width: 18.9476vw;
+    padding-top: 5vh;
+  }
+
+  footer {
+    min-height: 18.787vh;
+    width: 100%;
+  }
+
+  .foot {
+    padding: 4vh;
+    padding-top: 4.5vh;
   }
 
   footer p {
-    position: relative;
-    bottom: 75px;
-    width: 25%;
-    float: right;
-    padding: 0;
-    font-size: 1rem;
-    text-align: center;
+    min-height: 2.2157vh;
+    min-width: 49vh;
+    padding-top: 5vh;
   }
 
 }
@@ -185,44 +185,41 @@ footer p {
   /*------------------HEADER/FOOTER*/
 
   header {
-    height: 7.6%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    margin: 0 auto;
+    min-height: 7.671781187458305vh;
   }
 
   #logo {
-    flex: 0 1 15%;
+    max-width: 10vw;
+    min-height: 18vh;
   }
 
+  #logo img {
+    width: 80%;
+  }
 
   nav {
-    flex: 0 1 92%;
-    text-align: center;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    min-width: 54.866vw;
   }
 
   nav a {
-    flex: 0 1 15%;
-    margin: 0;
-    padding: 6% 4% 8.4% 4%;
-    height: 100%;
+    min-height: 7.671781187458305vh;
+    max-width: 18.9476vw;
+    padding-top: 7vh;
+  }
+
+  footer {
+    min-height: 18.787vh;
+    width: 100%;
+  }
+
+  .foot {
+    padding-top: 7.5vh;
   }
 
   footer p {
-    position: relative;
-    bottom: 97px;
-    width: 25%;
-    float: right;
-    padding: 0;
-    font-size: 1rem;
-    text-align: center;
+    min-height: 2.2157vh;
+    min-width: 49vh;
+    padding-top: 5vh;
   }
 
 }
