@@ -3,8 +3,8 @@
 #calhead, #month {
   display: block;
   width: 100%;
-  margin: 5%;
-  margin-left: 6%;
+  margin: 2vh;
+  margin-left: 4vh;
 }
 
 #calhead {
@@ -14,7 +14,7 @@
 .calbox {
   width: 100%;
   background-color: #0B1942;
-  padding-bottom: 8%;
+  padding-bottom: 5vh;
 
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
 
 .day {
   flex: 0 1 15%;
-  height: 15%;
+  height: 8vh;
   background-color: #fff;
   margin: 0.4%;
 }
@@ -53,8 +53,8 @@
   margin-top: 0;
   margin-bottom: 50%;
   padding: 9%;
-  height: 50%;
-  width: 40%;
+  height: 4.5vh;
+  width: 6.5vw;
   background-color: #0B1942;
   color: #fff;
   text-align: center;
@@ -78,7 +78,20 @@
 
 /*--------------------------------TABLET*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 545px) {
+
+  .day {
+    margin: 0.2%;
+    height: 10vh;
+  }
+
+  .day:nth-child(1) {
+    margin-left: 0.5%;
+  }
+
+  .day:nth-child(7) {
+    margin-right: 0.5%;
+  }
 
   .day p {
     font-size: 1rem;
@@ -97,7 +110,25 @@
 
 @media screen and (min-width: 769px) {
 
+  #calhead {
+    margin: 3vw;
+  }
+
+  .calbox {
+    padding-bottom: 2vh;
+  }
+
+  #month {
+    padding: 2vh 0;
+    margin-left: 4vw;
+  }
+
+  .day {
+    height: 14vh;
+  }
+
   .day p {
+    height: 6vh;
     font-size: 1.2rem;
   }
 
