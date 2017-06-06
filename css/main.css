@@ -85,7 +85,7 @@ nav a {
   flex: 1 1 100%;
   min-height: 2.2157vh;
   width: 70vw;
-  padding-top: 2vh;
+  padding-top: 1.5vh;
   color: #fff;
   font-weight: lighter;
   text-decoration: none;
@@ -111,6 +111,7 @@ footer {
 }
 
 .foot {
+  width: 100vw;
   padding-bottom: 2vh;
 }
 
@@ -127,6 +128,13 @@ footer p {
 
 
 
+
+
+
+
+
+
+
 /*--------------------------------TABLET*/
 /*is window smaller than 768px?*/
 
@@ -135,6 +143,7 @@ footer p {
 
   header {
     max-height: 12.671781vh;
+    display: flex;
   }
 
   #logo {
@@ -158,22 +167,41 @@ footer p {
   }
 
   footer {
-    min-height: 18.787vh;
+    max-height: 13.787vh;
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  footer nav {
+    flex: 1 0 57%;
   }
 
   .foot {
+    min-height: 13.787vh;
     padding: 4vh;
-    padding-top: 4.5vh;
-  }
-
-  footer p {
-    min-height: 2.2157vh;
-    min-width: 49vh;
     padding-top: 5vh;
   }
 
+  footer p {
+    flex: 1 1 20%;
+    min-height: 2.2157vh;
+    min-width: 49vh;
+    padding-top: 3.5vh;
+  }
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -185,16 +213,18 @@ footer p {
   /*------------------HEADER/FOOTER*/
 
   header {
-    min-height: 7.671781187458305vh;
+    max-height: 15.671781vh;
+    display: flex;
   }
 
   #logo {
-    max-width: 10vw;
-    min-height: 18vh;
+    min-width: 0;
+    max-width: 15vw;
   }
 
   #logo img {
-    width: 80%;
+    width: 69%;
+    padding-left: 10%;
   }
 
   nav {
@@ -203,23 +233,7 @@ footer p {
 
   nav a {
     min-height: 7.671781187458305vh;
-    max-width: 18.9476vw;
-    padding-top: 7vh;
-  }
-
-  footer {
-    min-height: 18.787vh;
-    width: 100%;
-  }
-
-  .foot {
-    padding-top: 7.5vh;
-  }
-
-  footer p {
-    min-height: 2.2157vh;
-    min-width: 49vh;
-    padding-top: 5vh;
+    max-width: 15vw;
   }
 
 }
