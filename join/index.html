@@ -2,20 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Film Club - Join</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/join.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   </head>
   <body>
 
     <header>
-      <div id="logo"></div>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="../calendar/index.html">Calendar</a>
-        <a href="index.html">Join</a>
-      </nav>
+      <a href="../index.html" id="logo"><img src="../images/filmclub.png" alt="Film Club Logo"></a>
+        <nav>
+          <a href="../index.html" class="navhome">Home</a>
+          <a href="../calendar/index.html"class="navcal">Calendar</a>
+          <a href="index.html" class="navjoin">Join</a>
+        </nav>
     </header>
 
     <section class="join">
@@ -29,7 +32,7 @@
             <div class="profile">
               <label for="picupload" name="picupload">profile picture</label>
               <input type="file" name="picupload" value="">
-              <div id="profilepic"></div>
+              <div id="profilepic"><img src="../images/profile-placeholder.png" alt="Profile Image"></div>
             </div>
           </fieldset>
 
@@ -56,28 +59,36 @@
           <fieldset class="formrow">
             <div class="genres">
               <label for="genres">Which genres are you interested in?</label>
-              <div class="check1">
+              <div class="check check1">
                 <input type="checkbox" name="genres" value="action">action
+                <br>
                 <input type="checkbox" name="genres" value="drama">drama
+                <br>
                 <input type="checkbox" name="genres" value="horror">horror
+                <br>
                 <input type="checkbox" name="genres" value="scifi">science fiction
               </div>
-              <div class="check2">
+              <div class="check check2">
                 <input type="checkbox" name="genres" value="adventure">adventure
+                <br>
                 <input type="checkbox" name="genres" value="fantasy">fantasy
+                <br>
                 <input type="checkbox" name="genres" value="mystery">mystery
+                <br>
                 <input type="checkbox" name="genres" value="western">western
               </div>
-              <div class="check3">
+              <div class="check check3">
                 <input type="checkbox" name="genres" value="comedy">comedy
+                <br>
                 <input type="checkbox" name="genres" value="historical">historical
+                <br>
                 <input type="checkbox" name="genres" value="romance">romance
               </div>
             </div>
 
             <div class="input">
               <label for="input">Additional input</label>
-              <input type="textarea" name="input" value="" id="input">
+              <textarea rows="5" name="input" value="" id="input"></textarea>
             </div>
             <div class="joinbutton">
               <button type="button" name="button">Join Film Club</button>
@@ -93,9 +104,9 @@
 
     <footer>
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="../calendar/index.html">Calendar</a>
-        <a href="index.html">Join</a>
+        <a href="../index.html" class="navhome foot">Home</a>
+        <a href="../calendar/index.html"class="navcal foot">Calendar</a>
+        <a href="index.html" class="navjoin foot">Join</a>
       </nav>
       <p>&copy; 2017, Film Club</p>
     </footer>

@@ -1,24 +1,232 @@
-/*Color Bank:
-text: #0B1942
-inline link: #00B7D3
-h2 background: #0B1942
-h2 color: #FFFFFF
-logo background: #F5005B
-navigation background: #7DDFE8
-navigation link color: #FFFFFF
-"Home" nav link background: #00A5BF
-"Calendar" nav link background: #00B7D3
-"Join" nav link background: #00D5E7
-"Up Next" background: #0B1942
-"Up Next" card background #E2E2E2
-calendar background and treatments: #0B1942
-calendar highlighted day: #F5005B
-button background: #F5005B
-copyright text: #FFFFFF*/
-
-/*font-family: 'PT Sans', sans-serif;*/
-
 /*Breakpoints
 S = up to 544px
 M = up to 768px
 L = over 769px*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  color: #0B1942;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  color: #00B7D3;
+  cursor: pointer;
+}
+
+/*------------------HEADER/FOOTER*/
+
+header {
+  min-height: 6.706vh;
+  width: 100vw;
+  display: flex;
+  background-color: #7DDFE8;
+}
+
+#logo {
+  min-width: 28.691vw;
+  display: block;
+  float: left;
+  background-color: #F5005B;
+  padding: 1%;
+}
+
+#logo img {
+  object-fit: contain;
+  width: 90%;
+  padding: 1%;
+  padding-left: 5%;
+}
+
+nav {
+  min-width: 54.866vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  flex: 1 1 100%;
+  min-height: 2.2157vh;
+  width: 70vw;
+  padding-top: 1.5vh;
+  color: #fff;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.navhome {
+  background-color: #00A5BF;
+}
+
+.navcal {
+  background-color: #00B7D3;
+}
+
+.navjoin {
+  background-color: #00D5E7;
+}
+
+footer {
+  min-height: 10.787vh;
+  width: 100vw;
+  background-color: #6FE1E7;
+  font-size: 1rem;
+}
+
+.foot {
+  width: 100vw;
+  padding-bottom: 2vh;
+}
+
+footer p {
+  min-height: 7.2157vh;
+  padding: 3vh;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------TABLET*/
+
+@media screen and (min-width: 545px) {
+  /*------------------HEADER/FOOTER*/
+
+  header {
+    max-height: 12.671781vh;
+    display: flex;
+  }
+
+  #logo {
+    min-width: 0;
+    max-width: 20vw;
+  }
+
+  #logo img {
+    width: 79%;
+    padding-left: 13%;
+  }
+
+  nav {
+    min-width: 57.866vw;
+  }
+
+  nav a {
+    min-height: 7.671781187458305vh;
+    max-width: 18.9476vw;
+    padding-top: 4vh;
+  }
+
+  footer {
+    max-height: 12.671781vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  footer nav {
+    flex: 1 0 57%;
+    max-height: 12.671781vh;
+  }
+
+  .foot {
+    min-height: 12.671781vh;
+    padding: 4vh;
+    padding-top: 5vh;
+  }
+
+  footer p {
+    flex: 1 1 20%;
+    min-height: 2.2157vh;
+    max-width: 49vh;
+    padding-top: 3.5vh;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------DESKTOP*/
+
+@media screen and (min-width: 769px){
+  /*------------------HEADER/FOOTER*/
+
+  header {
+    max-height: 11.328125vh;
+    display: flex;
+  }
+
+  #logo {
+    min-width: 0;
+    max-width: 15vw;
+  }
+
+  #logo img {
+    width: 62%;
+    max-height: 11.328125vh;
+    padding-left: 11%;
+    margin-left: 10%;
+  }
+
+  nav {
+    min-width: 54.866vw;
+  }
+
+  nav a {
+    min-height: 11.328125vh;
+    max-width: 12vw;
+    padding-top: 4vh;
+  }
+
+  footer {
+    max-height: 11.328125vh;
+
+  }
+
+  .foot {
+    min-height: 11.328125vh;
+  }
+
+}
