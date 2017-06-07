@@ -194,20 +194,18 @@ footer p {
   /*------------------HEADER/FOOTER*/
 
   header {
-    max-height: 11.328125vh;
+    min-height: 11.328125vh;
     display: flex;
   }
 
   #logo {
     min-width: 0;
-    max-width: 15vw;
+    max-width: 12vw;
   }
 
   #logo img {
-    width: 62%;
-    max-height: 11.328125vh;
-    padding-left: 11%;
-    margin-left: 10%;
+    height: 10vh;
+    padding-bottom: 8%;
   }
 
   nav {
@@ -215,18 +213,18 @@ footer p {
   }
 
   nav a {
-    min-height: 11.328125vh;
+    min-height: 12.328125vh;
     max-width: 12vw;
     padding-top: 4vh;
   }
 
   footer {
-    max-height: 11.328125vh;
+    min-height: 11.328125vh;
 
   }
 
   .foot {
-    min-height: 11.328125vh;
+    min-height: 12.328125vh;
   }
 
 }
